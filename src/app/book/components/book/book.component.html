@@ -1,3 +1,24 @@
-<p>
-  book works!
-</p>
+<div class="book-container">
+
+  <mat-card
+    [ngStyle]="{'background-color':'#'+bookBackgroundColor}"
+    class="book-card">
+
+    <mat-card-header class="card-header">
+      <mat-card-title>{{book['name']}}</mat-card-title>
+      <mat-card-subtitle>{{book['author']}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>
+        {{book['summary']}}
+      </p>
+    </mat-card-content>
+
+    <mat-card-actions class="card-actions">
+      <button mat-button (click)="edit()">Edit</button>
+      <button mat-button (click)="remove()">Remove</button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>

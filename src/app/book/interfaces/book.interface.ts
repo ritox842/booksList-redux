@@ -7,5 +7,4 @@ export interface Ibook {
   genre: BOOK_GENRE;
   publishDate: number;
   summary: string;
-  coverPicture: string;
 }

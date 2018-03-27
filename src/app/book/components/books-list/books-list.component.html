@@ -2,8 +2,9 @@
 
   <app-book
     *ngFor="let book of books$|async"
-
-
+    class="book"
+    [book]="book"
+    [bookColorArray]="bookColorArray"
   ></app-book>
 
 </div>
